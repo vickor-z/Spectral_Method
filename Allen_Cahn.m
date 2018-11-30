@@ -5,7 +5,7 @@
 N = 20;
 a = 0; b = 2 * pi; dt = 1 / (2 * N + 1) / (2 * N + 1);
 x = a : (b - a) / (2 * N + 1) : b - (b - a) / (2 * N + 1);
-Lx = b - a; eps = 0.01; u0 = sin(x - pi);
+Lx = b - a; eps = 0.01; u0 = sin(x);
 
 t = 0; T = 1;
 
@@ -37,6 +37,8 @@ while t<T
     %记录残量，这里定义residual为u^(n+1)-u^n的L无穷范数（而不是u-u^n的L无穷范数，所以并不是数学意义上的残量）
     res = max(abs(u - up));
     
+    plot(x,u);
+    pause(0.0003);
 end
 
 plot(x,u);

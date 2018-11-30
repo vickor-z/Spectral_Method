@@ -7,5 +7,5 @@
 
 附带的几个数值算例分别为
 1、一维下的扩散方程，并用以测试数值残量
-2、一维的Allen_Cahn方程
-3、二维的Allen_Cahn方程
+2、Allen_Cahn方程
+3、Cahn_Hilliard方程
